@@ -25,9 +25,26 @@ li a {
     color: white;
     text-decoration: none;
     text-align: center;
+    font-family: Helvetica, sans-serif;
 }
 
 li a:hover {
     background-color: black;
     color: white;
 }
+
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftpart {
+    width: 30%;
+    height: 100vh; 
+}
+
+.rightpart {
+    flex-grow: 1;
+    height: 100vh;
+}
+
