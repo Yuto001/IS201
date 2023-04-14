@@ -7,16 +7,16 @@ body {
     font-size: 50px;
 }
 
-ul {
+.navi {
     list-style-type: none;
     background-color: darkolivegreen;
     overflow: hidden;
     margin: 0;
     padding: 0;
-}
-li {
+} /* I put a class because if I use ul, it will affect other parts*/
+.subnav {
     float: left;
-}
+} /*Here is the same reason as above. I can't use li because I use li on other parts as well*/
 
 li a {
     display: block;
@@ -30,21 +30,44 @@ li a {
 
 li a:hover {
     background-color: black;
-    color: white;
+    color: lightgreen;
 }
+
+
 
 .parent {
     display: flex;
     flex-direction: row;
-}
+} /*This style is the parent part of the website*/
 
 .leftpart {
-    width: 30%;
+    width: 40%;
     height: 100vh; 
-}
+} /*This is the left side of the website*/
 
 .rightpart {
     flex-grow: 1;
     height: 100vh;
+} /*This is the right side*/
+
+.hobby {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+.box {
+    border: 2px solid white;
+}
+
+.footer {
+    height:25px;
+    left:5px;
+    right:5px;
+    bottom:5px;
+    font-size:13px;
+    color:black;
+    position:fixed;
 }
 
